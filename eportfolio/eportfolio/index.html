@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Student’s Class Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== TOP BAR (theme switcher + scroll progress) ========== -->
+<header class="bar">
+  <div class="brand">📘 My Portfolio</div>
+  <div class="themes"><span>Theme</span>
+    <button class="dot" data-t="classic" style="background:#2f5bea" aria-label="Classic theme" aria-pressed="false"></button>
+    <button class="dot" data-t="paper" style="background:#b5532c" aria-label="Paper theme" aria-pressed="false"></button>
+    <button class="dot" data-t="midnight" style="background:#0e1424" aria-label="Midnight theme" aria-pressed="false"></button>
+  </div>
+  <div id="progress"></div>
+</header>
+
+<main>
+
+<!-- ========== 1. COVER PAGE ========== -->
+<section id="s1" class="hero">
+  <div class="uni">Jose Rizal University · 3rd Year College / Information Technology</div>
+  <h1>STUDENT’S <span>CLASS PORTFOLIO</span></h1>
+  <div>ITC C309 — This course provides the students with the foundation blocks that are necessary for preparing, delivering, and supporting presentations that are both engaging and effective.</div>
+  <div class="name">Third Jerome Miguel D. Caranto</div>
+  <div class="meta">
+    <div><b>Year &amp; Section</b>3rd Year BSIT-302i</div>
+    <div><b>Instructor</b>Virginia Loyola</div>
+    <div><b>Academic Year &amp; Semester</b>[AY 2026–2027, 1st Sem]</div>
+  </div>
+  <a class="btn" href="#s2">Explore my work ↓</a>
+</section>
+
+<!-- ========== 2. TABLE OF CONTENTS (auto-built by js/script.js) ========== -->
+<section id="s2" class="reveal">
+  <span class="num">02</span><h2>Table of Contents</h2>
+  <p class="sub">Click any section to jump to it.</p>
+  <nav class="toc" id="toc"></nav>
+</section>
+
+<!-- ========== 3. STUDENT PROFILE ========== -->
+<section id="s3" class="reveal">
+  <span class="num">03</span><h2>Student Profile</h2>
+  <div class="grid2">
+    <div class="panel">
+      <img class="photo" src="images/myPhoto.png" alt="Photo of Third Jerome Miguel D. Caranto">
+      <h3>Third Jerome Miguel D. Caranto</h3>
+      <p class="sub" style="margin:4px 0 0">Student No.: [25-265558]  [Information Technology] · [3rd Year] Section [ITC C309-302i]</p>
+    </div>
+    <div class="panel"><h3>Short Introduction</h3>
+      <p class="sub" style="margin-top:8px">Hi! I am Third Jerome Miguel D. Caranto, 20 years old, and currently based in Pasig City, Metro Manila. Being the youngest among my siblings has shaped me into an open-minded, creative, and enthusiastic person. Growing up as the bunso allowed me to absorb great advice from my family while developing my own unique perspective on life.</p></div>
+    <div class="panel"><h3>🎓 Educational Background</h3>
+      <ul class="clean"><li>Pasic Catholic College, 2010-2016(Elementary)</li><li>Sta Marta Center, 2017-2022(High School)</li><li>Jose Rizal University, 2024-2027(College)</li></ul></div>
+    <div class="panel"><h3>⭐ Interests / Hobbies</h3>
+      <ul class="clean"><li>I like to play sport like Basketball and Pickleball.</li><li>I enjoy watching movies/series.</li></ul></div>
+    <div class="panel"><h3>🛠 Trainings / Work Experience</h3>
+      <ul class="clean"><li>Penshoppe Staff, 2023</li><li>Customer Assistant, 2026</li></div>
+  </div>
+</section>
+
+<!-- ========== 4. COURSE SYLLABUS ========== -->
+<section id="s4" class="reveal">
+  <span class="num">04</span><h2>Course Syllabus / Outline</h2>
+  <div class="panel">
+    <iframe class="output-preview pdf-preview" src="files/Course Syllabus.pdf" title="Course syllabus PDF preview"></iframe>
+    <p><a href="files/Course Syllabus.pdf" class="link" target="_blank" rel="noopener">Open syllabus PDF →</a></p>
+  </div>
+</section>
+
+<!-- ========== 5. LABORATORY ACTIVITIES (cards come from js/data.js) ========== -->
+<section id="s5" class="reveal">
+  <span class="num">05</span><h2>Laboratory Activities &amp; Exercises</h2>
+  <p class="sub">In chronological order. Tap a card to expand.</p>
+  <div class="cards" id="c-act"></div>
+</section>
+
+<!-- ========== 6. QUIZZES ========== -->
+<section id="s6" class="reveal">
+  <span class="num">06</span><h2>Quizzes &amp; Assessments</h2>
+  <div class="cards" id="c-quiz"></div>
+</section>
+
+<!-- ========== 7. PROJECTS ========== -->
+<section id="s7" class="reveal">
+  <span class="num">07</span><h2>Projects &amp; Performance Tasks</h2>
+  <div class="cards" id="c-proj"></div>
+</section>
+
+<!-- ========== 8. EXAMINATION RESULTS ========== -->
+<section id="s8" class="reveal">
+  <span class="num">08</span><h2>Examination Results</h2>
+  <div class="cards" id="c-exam"></div>
+</section>
+
+<!-- ========== 9. LEARNING REFLECTION ========== -->
+<section id="s9" class="reveal">
+  <span class="num">09</span><h2>Learning Reflection</h2>
+  <div class="acc">
+    <details open><summary>What important knowledge and skills did I learn?</summary><p>I learned how to construct precise, well-conceptualized PowerPoint presentations and enhanced my technical proficiency across various software editing tools. Additionally, I developed skills in visual hierarchy, layout structuring, and content organization to communicate complex ideas effectively.</p></details>
+    <details><summary>Which activities or topics were most challenging?</summary><p>Working with Figma was the most challenging activity because it was my first time using the platform. Navigating its interface, managing frames, and learning its specific UI design tools required a steep learning curve compared to standard presentation tools.</p></details>
+    <details><summary>How did I overcome the difficulties?</summary><p>I overcame these challenges by watching step-by-step video tutorials, studying design templates for inspiration, and engaging in continuous hands-on practice. Taking an iterative approach allowed me to troubleshoot visual layout issues and gradually master the tools.</p></details>
+    <details><summary>How will I apply what I learned?</summary><p>I will apply these skills to design visually engaging presentation decks, UI mockups, and structured digital assets for future academic and professional projects. Combining PowerPoint structure with Figma design tools will allow me to present complex ideas clearly and compellingly.</p></details>
+  </div>
+</section>
+
+<!-- ========== 10. COURSE LEARNING SUMMARY ========== -->
+<section id="s10" class="reveal">
+  <span class="num">10</span><h2>Course Learning Summary</h2>
+  <div class="stats" id="stats"></div>
+  <div class="panel"><p class="muted-text">Overall, this learning experience provided a solid foundation in presentation structure and visual design software. While using Figma for the first time presented a steep learning curve, working through tutorials and experimenting with layouts helped build confidence. Stepping out of comfortable tools like PowerPoint to learn a modern design platform expanded practical skill sets, making it much easier to create professional presentations, UI mockups, and visual assets for future projects.</p></div>
+</section>
+
+
+</main>
+
+<!-- data.js FIRST (your content), then script.js (the behavior) -->
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
